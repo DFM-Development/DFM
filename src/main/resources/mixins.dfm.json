@@ -1,0 +1,20 @@
+{
+  "package": "team.zenit.mixin",
+  "plugin": "team.zenit.init.FMLLoadingPlugin",
+  "refmap": "mixins.${modid}.refmap.json",
+  "minVersion": "0.7",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "IAccessorC03PacketPlayer",
+    "IAccessorEntity",
+    "IAccessorEntityLivingBase",
+    "IAccessorEntityPlayer",
+    "IAccessorEntityRenderer",
+    "IAccessorGuiChat",
+    "IAccessorMinecraft",
+    "IAccessorPlayerControllerMP",
+    "IAccessorRenderManager",
+    "MixinGuiIngameForge",
+    "MixinMinecraft"
+  ]
+}
