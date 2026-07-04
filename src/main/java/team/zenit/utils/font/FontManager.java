@@ -17,12 +17,13 @@ import java.util.function.Supplier;
 public final class FontManager {
     private static final String MINECRAFT = "Minecraft";
     private static final String RESOURCE_ROOT = "/assets/dfm/fonts/";
-    /** Large enough that HUD font-size drags + clickgui + nametags do not evict active renderers every frame. */
     private static final int MAX_CACHED_RENDERERS = 512;
     private static final BundledFont[] BUNDLED_FONTS = {
             new BundledFont("Sf-Bold", "Sf-Bold.ttf"),
             new BundledFont("Sf-Regular", "Sf-Regular.ttf"),
-            new BundledFont("Sf-Ui", "Sf-Ui.ttf")
+            new BundledFont("Sf-Ui", "Sf-Ui.ttf"),
+            new BundledFont("NotoSansR","NotoSans_Regular.ttf"),
+            new BundledFont("NotoSansSemiBold","NotoSans_SemiBold.ttf")
     };
     private static final Map<String, BundledFont> BUNDLED_FONT_MAP = buildBundledFontMap();
     private static final Map<String, Font> BASE_FONT_CACHE = new ConcurrentHashMap<String, Font>();
